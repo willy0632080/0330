@@ -27,6 +27,15 @@ if ($conn->connect_error) {
 $sql = "SELECT * FROM news";
 $result = $conn->query($sql);
 
+?>
+<form action="addtitle.php" method ="POST">
+  新聞標題<input type =txt>
+  <input type =submit value ="送出">  
+
+</form>
+
+<?php
+
 if ($result->num_rows > 0) {
   echo "<table class='table table-success table-striped'>";
   echo "<tr><td>消息</td><td>張貼日期</td></tr>";
