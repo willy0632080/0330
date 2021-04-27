@@ -29,7 +29,7 @@ $result = $conn->query($sql);
 
 ?>
 <form action="addtitle.php" method ="POST">
-  新聞標題<input type =txt>
+  新聞標題<input type=txt size=40 name=title>
   <input type =submit value ="送出">  
 
 </form>
@@ -38,11 +38,12 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
   echo "<table class='table table-success table-striped'>";
-  echo "<tr><td>消息</td><td>張貼日期</td></tr>";
+  echo "<tr><td>消息</td><td>張貼日期</td><td>管理</td></tr>";
   while($row = $result->fetch_assoc()) {
   	echo "<tr>";
 	  	echo "<td>" . $row["title"]. "</td>";
 	  	echo "<td>" . $row["created"]. "</td>";
+      echo "<td><a class='btn btn-outline-info bth-sm'href='delete.php?target=" . $row["id"] . "'>刪除</a></td>";
     echo "</tr>";
   }
   echo "</table>";

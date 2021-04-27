@@ -39,7 +39,6 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`id`, `title`, `created`) VALUES
-(1, '古戰場最終日', '2021-04-13 15:59:59'),
 (2, '手被蟲咬', '2021-04-13 15:59:59'),
 (3, '7萬線貢獻崩壞', '2021-04-13 16:00:55'),
 (4, 'ㄈㄈㄐ掉落率極低', '2021-04-13 16:02:38'),
@@ -63,7 +62,7 @@ ALTER TABLE `news`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

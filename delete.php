@@ -1,5 +1,5 @@
 <?php
-$title = $_POST['title'];
+$id = $_GET['target'];
 $servername = "localhost";
 $username = "root";
 $password = "12345678";
@@ -12,9 +12,11 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO news (title) VALUES ('$title')";
+// sql to delete a record
+$sql = "DELETE FROM news WHERE id=$id";
 
 $conn->query($sql);
 $conn->close();
+
 header('Location: index.php');
 ?>
