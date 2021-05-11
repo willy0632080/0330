@@ -1,26 +1,10 @@
+<html>
+<title>劉乙賢のサイト</title>
 <head>
-	<style>
-		body {
-		font-family:微軟正黑體;
-		}
-	p {
-  		font-family: verdana;
-  		font-size: 20px;
-	}
-	</style>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 </head>
 <body>
-
-<h1>失敗組</h1>
-<a  href='/loserq/' class="btn btn-outline-primary bth-sm">HOME</a>
-<a  href='https://jp.nkust.edu.tw/'  class="btn btn-outline-danger bth-sm">應日系</a>
-<a href='http://tzukuan.nkust.org/'  class="btn btn-outline-success bth-sm">苗圃計畫</a>
-<a href='/loserq/videoindex.php/'  class="btn btn-outline-warning bth-sm">我的影片</a>
-<select onchange='location.href="/loserq/"+this.value'>
-	<option value="0323-1.php">請選擇要執行的練習</option>
-	<option value="0323-1.php">0323-1</option>
-	<option value="0330-1.php">0330-1</option>
-
-
-</select>
-<hr>
